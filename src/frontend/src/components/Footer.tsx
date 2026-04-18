@@ -144,19 +144,13 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-foreground/30 font-body">
           <p>
             © {year} Nidhi Bhatia — Bridal Makeup Artist. All rights reserved.
-          </p>
-          <p>
-            Built with love using{" "}
-            <a
-              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`}
-              className="hover:text-gold transition-smooth"
-              style={{ color: "rgba(168,85,247,0.6)" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              caffeine.ai
-            </a>
-          </p>
+       <p className="text-xs text-white/30 flex items-center gap-1">
+  © {year} AWM: Makeovers By Aastha · Lucknow
+</p>
+
+<p className="text-xs text-white/25">
+  Designed & Developed by Kavya
+</p>
         </div>
       </div>
     </footer>
