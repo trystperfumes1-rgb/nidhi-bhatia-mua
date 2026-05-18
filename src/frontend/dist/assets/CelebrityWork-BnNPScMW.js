@@ -1,5 +1,5 @@
-import { j as jsxRuntimeExports, C as Canvas, m as motion, S as Sparkles, r as reactExports, u as useFrame, F as Float } from "./index-C50xJWGr.js";
-function PurpleCrystal({
+import { j as jsxRuntimeExports, C as Canvas, m as motion, S as Sparkles, r as reactExports, u as useFrame, F as Float } from "./index-CfpckDaP.js";
+function WarmCrystal({
   position,
   speed = 1
 }) {
@@ -16,10 +16,10 @@ function PurpleCrystal({
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "meshStandardMaterial",
       {
-        color: "#8b5cf6",
+        color: "#C49A6C",
         metalness: 1,
         roughness: 0,
-        emissive: "#8b5cf6",
+        emissive: "#C49A6C",
         emissiveIntensity: 0.55,
         transparent: true,
         opacity: 0.9
@@ -27,7 +27,7 @@ function PurpleCrystal({
     )
   ] }) });
 }
-function PurpleDodecahedron({
+function WarmDodecahedron({
   position
 }) {
   const ref = reactExports.useRef(null);
@@ -42,10 +42,10 @@ function PurpleDodecahedron({
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "meshStandardMaterial",
       {
-        color: "#a855f7",
+        color: "#C49A6C",
         metalness: 0.95,
         roughness: 0.05,
-        emissive: "#7c3aed",
+        emissive: "#5C3D2E",
         emissiveIntensity: 0.4,
         transparent: true,
         opacity: 0.85
@@ -56,9 +56,9 @@ function PurpleDodecahedron({
 function CelebScene() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("ambientLight", { intensity: 0.45 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [5, 5, 3], color: "#a855f7", intensity: 3.5 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [-5, -3, 2], color: "#7c3aed", intensity: 2.5 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [0, 3, 4], color: "#c084fc", intensity: 1.5 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [5, 5, 3], color: "#C49A6C", intensity: 3.5 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [-5, -3, 2], color: "#5C3D2E", intensity: 2.5 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [0, 3, 4], color: "#E8D5B7", intensity: 1.5 }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       Sparkles,
       {
@@ -67,7 +67,7 @@ function CelebScene() {
         scale: [14, 10, 8],
         speed: 0.35,
         opacity: 0.85,
-        color: "#a855f7"
+        color: "#C49A6C"
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -78,14 +78,14 @@ function CelebScene() {
         scale: [10, 7, 5],
         speed: 0.55,
         opacity: 0.5,
-        color: "#c084fc"
+        color: "#E8D5B7"
       }
     ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(PurpleCrystal, { position: [-4, 2, -3] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(PurpleCrystal, { position: [4, -1, -4], speed: 1.3 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(PurpleCrystal, { position: [0, 3, -5], speed: 0.8 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(PurpleDodecahedron, { position: [-1.5, -2.5, -3] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(PurpleDodecahedron, { position: [2.5, 2, -4] })
+    /* @__PURE__ */ jsxRuntimeExports.jsx(WarmCrystal, { position: [-4, 2, -3] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(WarmCrystal, { position: [4, -1, -4], speed: 1.3 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(WarmCrystal, { position: [0, 3, -5], speed: 0.8 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(WarmDodecahedron, { position: [-1.5, -2.5, -3] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(WarmDodecahedron, { position: [2.5, 2, -4] })
   ] });
 }
 const CELEBRITIES = [
@@ -114,7 +114,7 @@ const CELEBRITIES = [
     id: "celeb4",
     name: "Political Dignitary",
     title: "State Function Appearance",
-    description: "Provided exclusive makeup artistry for a prominent political personality for high-profile state functions and press conferences across Uttar Pradesh.",
+    description: "Provided exclusive makeup artistry for a prominent political personality for high-profile state functions and press conferences across Maharashtra.",
     tags: ["VIP Client", "State Event", "Exclusive"]
   }
 ];
@@ -123,18 +123,18 @@ function CelebrityWork() {
     "section",
     {
       id: "celebrity",
-      className: "relative py-28 bg-section-dark overflow-hidden",
+      className: "relative py-28 bg-[#F5EDE0] overflow-hidden",
       "data-ocid": "celebrity.section",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 opacity-35 pointer-events-none", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Canvas, { camera: { position: [0, 0, 8], fov: 55 }, children: /* @__PURE__ */ jsxRuntimeExports.jsx(CelebScene, {}) }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/35 to-transparent" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-b from-luxury-950/40 via-transparent to-luxury-950/40 pointer-events-none" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-b from-[#F5EDE0]/50 via-transparent to-[#F5EDE0]/50 pointer-events-none" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute inset-0 pointer-events-none",
             style: {
-              background: "radial-gradient(ellipse at 50% 50%, rgba(139,92,246,0.04) 0%, transparent 70%)"
+              background: "radial-gradient(ellipse at 50% 50%, rgba(196,154,108,0.06) 0%, transparent 70%)"
             }
           }
         ),
@@ -153,7 +153,7 @@ function CelebrityWork() {
                   "Trusted by ",
                   /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-gold-text italic", children: "Stars" })
                 ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground/50 font-body text-lg max-w-2xl mx-auto", children: "From Bollywood film sets to national television — Nidhi Bhatia's artistry has graced the faces of some of India's most celebrated personalities." })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground/50 font-body text-lg max-w-2xl mx-auto", children: "From Bollywood film sets to national television — Snehal Pawar's artistry has graced the faces of some of India's most celebrated personalities." })
               ]
             }
           ),
@@ -166,13 +166,13 @@ function CelebrityWork() {
               viewport: { once: true },
               transition: { duration: 0.8 },
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-r from-luxury-950 via-luxury-800/80 to-luxury-950" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-r from-[#EFE3D0] via-[#EFE3D0]/70 to-[#EFE3D0]" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "div",
                   {
                     className: "absolute inset-0",
                     style: {
-                      background: "linear-gradient(135deg, rgba(139,92,246,0.06) 0%, transparent 50%, rgba(109,40,217,0.06) 100%)"
+                      background: "linear-gradient(135deg, rgba(196,154,108,0.08) 0%, transparent 50%, rgba(92,61,46,0.06) 100%)"
                     }
                   }
                 ),
@@ -186,7 +186,7 @@ function CelebrityWork() {
                       /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
                       " celebrity"
                     ] }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground/60 font-body leading-relaxed mb-7", children: "Nidhi Bhatia has built a reputation as one of Lucknow's most sought-after makeup artists for celebrity clientele. Her eye for detail, speed of execution, and mastery of photogenic finishes have earned her trusted partnerships with film productions, television channels, and luxury brands." }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground/60 font-body leading-relaxed mb-7", children: "Snehal Pawar has built a reputation as one of Amravati's most sought-after makeup artists for celebrity clientele. Her eye for detail, speed of execution, and mastery of photogenic finishes have earned her trusted partnerships with film productions, television channels, and luxury brands." }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-6", children: [
                       { num: "50+", label: "Celebrity Clients" },
                       { num: "15+", label: "Productions" },
@@ -213,7 +213,7 @@ function CelebrityWork() {
                         transition: { duration: 0.5, delay: i * 0.1 },
                         whileHover: {
                           scale: 1.04,
-                          boxShadow: "0 0 30px rgba(139,92,246,0.25)"
+                          boxShadow: "0 0 30px rgba(196,154,108,0.28)"
                         },
                         children: [
                           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -225,12 +225,12 @@ function CelebrityWork() {
                               loading: "lazy"
                             }
                           ),
-                          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-t from-luxury-950/65 to-transparent" }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-t from-[#3D2314]/50 to-transparent" }),
                           /* @__PURE__ */ jsxRuntimeExports.jsx(
                             "div",
                             {
                               className: "absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300",
-                              style: { background: "rgba(139,92,246,0.08)" }
+                              style: { background: "rgba(196,154,108,0.08)" }
                             }
                           )
                         ]
@@ -241,7 +241,7 @@ function CelebrityWork() {
                       "div",
                       {
                         className: "absolute inset-0 rounded-2xl -z-10 blur-3xl",
-                        style: { background: "rgba(139,92,246,0.07)" }
+                        style: { background: "rgba(196,154,108,0.08)" }
                       }
                     )
                   ] })
@@ -273,9 +273,9 @@ function CelebrityWork() {
                   {
                     className: "px-3 py-1 rounded-full border text-xs font-body tracking-wide",
                     style: {
-                      background: "rgba(139,92,246,0.08)",
-                      borderColor: "rgba(139,92,246,0.18)",
-                      color: "rgba(168,85,247,0.75)"
+                      background: "rgba(196,154,108,0.08)",
+                      borderColor: "rgba(196,154,108,0.18)",
+                      color: "rgba(196,154,108,0.75)"
                     },
                     children: tag
                   },

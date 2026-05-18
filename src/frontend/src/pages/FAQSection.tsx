@@ -28,7 +28,7 @@ const FAQS: FAQ[] = [
     id: "4",
     question: "Do you provide home service / travel to the venue?",
     answer:
-      "Yes, we offer home service and venue visits within Lucknow and nearby areas. Travel charges apply for locations outside the city. For destination weddings, travel, accommodation, and additional fees will be discussed during consultation. Please mention your venue when inquiring.",
+      "Yes, we offer home service and venue visits within Amravati and nearby areas. Travel charges apply for locations outside the city. For destination weddings, travel, accommodation, and additional fees will be discussed during consultation. Please mention your venue when inquiring.",
     category: "Services",
   },
   {
@@ -72,7 +72,7 @@ function FAQItem({ faq, index }: { faq: FAQ; index: number }) {
       transition={{ duration: 0.5, delay: index * 0.07 }}
       className="border rounded-xl overflow-hidden transition-smooth"
       style={{
-        borderColor: open ? "rgba(139,92,246,0.3)" : "rgba(139,92,246,0.12)",
+        borderColor: open ? "rgba(196,154,108,0.3)" : "rgba(196,154,108,0.12)",
       }}
       data-ocid={`faq.item.${index + 1}`}
     >
@@ -80,7 +80,7 @@ function FAQItem({ faq, index }: { faq: FAQ; index: number }) {
         type="button"
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between gap-4 p-6 text-left glass group transition-smooth"
-        style={{ background: open ? "rgba(139,92,246,0.04)" : undefined }}
+        style={{ background: open ? "rgba(196,154,108,0.05)" : undefined }}
         aria-expanded={open}
         data-ocid={`faq.toggle.${index + 1}`}
       >
@@ -91,7 +91,7 @@ function FAQItem({ faq, index }: { faq: FAQ; index: number }) {
           animate={{ rotate: open ? 45 : 0 }}
           transition={{ duration: 0.3 }}
           className="flex-shrink-0 w-7 h-7 rounded-full border flex items-center justify-center text-gold font-light text-lg leading-none"
-          style={{ borderColor: "rgba(139,92,246,0.35)" }}
+          style={{ borderColor: "rgba(196,154,108,0.35)" }}
         >
           +
         </motion.span>
@@ -109,8 +109,8 @@ function FAQItem({ faq, index }: { faq: FAQ; index: number }) {
             <div
               className="px-6 pb-6 pt-2 border-t"
               style={{
-                background: "rgba(139,92,246,0.03)",
-                borderColor: "rgba(139,92,246,0.1)",
+                background: "rgba(196,154,108,0.04)",
+                borderColor: "rgba(196,154,108,0.1)",
               }}
             >
               <p className="text-sm text-foreground/65 font-body leading-relaxed">
@@ -120,9 +120,9 @@ function FAQItem({ faq, index }: { faq: FAQ; index: number }) {
                 <span
                   className="inline-block mt-3 px-2.5 py-1 rounded-full text-[10px] tracking-widest uppercase font-body font-semibold"
                   style={{
-                    background: "rgba(139,92,246,0.08)",
-                    border: "1px solid rgba(139,92,246,0.18)",
-                    color: "rgba(168,85,247,0.75)",
+                    background: "rgba(196,154,108,0.08)",
+                    border: "1px solid rgba(196,154,108,0.18)",
+                    color: "rgba(196,154,108,0.85)",
                   }}
                 >
                   {faq.category}
@@ -140,17 +140,17 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="relative py-28 bg-section-dark overflow-hidden"
+      className="relative py-28 bg-[#F5EDE0] overflow-hidden"
       data-ocid="faq.section"
     >
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/22 to-transparent" />
       <div
         className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full blur-[100px] pointer-events-none"
-        style={{ background: "rgba(139,92,246,0.05)" }}
+        style={{ background: "rgba(196,154,108,0.06)" }}
       />
       <div
         className="absolute top-20 left-0 w-[350px] h-[350px] rounded-full blur-[120px] pointer-events-none"
-        style={{ background: "rgba(109,40,217,0.04)" }}
+        style={{ background: "rgba(196,154,108,0.05)" }}
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6">
@@ -179,7 +179,7 @@ export default function FAQSection() {
 
         <motion.div
           className="text-center mt-12 glass rounded-2xl p-8"
-          style={{ border: "1px solid rgba(139,92,246,0.18)" }}
+          style={{ border: "1px solid rgba(196,154,108,0.18)" }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -190,7 +190,7 @@ export default function FAQSection() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="https://wa.me/918112555544"
+              href="https://wa.me/919561548151"
               target="_blank"
               rel="noopener noreferrer"
               className="px-7 py-3 rounded-full bg-[#25D366] text-white font-body font-semibold text-sm hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-smooth"
@@ -199,7 +199,7 @@ export default function FAQSection() {
               Ask on WhatsApp
             </a>
             <a
-              href="tel:+918112555544"
+              href="tel:+919561548151"
               className="px-7 py-3 rounded-full gradient-gold text-white font-body font-semibold text-sm shadow-glow-subtle hover:shadow-glow-gold transition-smooth"
               data-ocid="faq.call_button"
             >

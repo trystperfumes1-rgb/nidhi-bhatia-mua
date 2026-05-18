@@ -21572,7 +21572,7 @@ function resolveElements(elementOrSelector, scope, selectorCache) {
     return [elementOrSelector];
   } else if (typeof elementOrSelector === "string") {
     let root2 = document;
-    const elements = (selectorCache == null ? void 0 : selectorCache[elementOrSelector]) ?? root2.querySelectorAll(elementOrSelector);
+    const elements = root2.querySelectorAll(elementOrSelector);
     return elements ? Array.from(elements) : [];
   }
   return Array.from(elementOrSelector).filter((element) => element != null);
@@ -26552,7 +26552,7 @@ function FloatingButtons() {
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.a,
             {
-              href: "https://wa.me/918112555544",
+              href: "https://wa.me/919561548151",
               target: "_blank",
               rel: "noopener noreferrer",
               className: "group flex items-center gap-2 bg-[#25D366] rounded-full shadow-lg hover:shadow-[0_0_25px_rgba(37,211,102,0.5)] transition-smooth overflow-hidden",
@@ -26582,10 +26582,10 @@ function FloatingButtons() {
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.a,
             {
-              href: "tel:+918112555544",
+              href: "tel:+919561548151",
               className: "group flex items-center gap-2 rounded-full overflow-hidden transition-smooth shadow-glow-gold hover:shadow-glow-elevated",
               style: {
-                background: "linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)"
+                background: "linear-gradient(135deg, #3D2314 0%, #C49A6C 100%)"
               },
               whileHover: { scale: 1.1 },
               whileTap: { scale: 0.95 },
@@ -26688,7 +26688,14 @@ function FloatingButtons() {
     )
   ] }) });
 }
-const LINKS = ["Services", "Portfolio", "About", "Testimonials", "Contact"];
+const LINKS = [
+  "Services",
+  "Portfolio",
+  "About",
+  "Academy",
+  "Testimonials",
+  "Contact"
+];
 function scrollTo(section) {
   const id2 = section.toLowerCase().replace(/\s/g, "-");
   const el = document.getElementById(id2);
@@ -26699,8 +26706,11 @@ function Footer() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "footer",
     {
-      className: "relative bg-luxury-950 overflow-hidden",
-      style: { borderTop: "1px solid rgba(139,92,246,0.12)" },
+      className: "relative overflow-hidden",
+      style: {
+        background: "#DDD0BC",
+        borderTop: "1px solid rgba(196,154,108,0.3)"
+      },
       "data-ocid": "footer",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-gold/45 to-transparent" }),
@@ -26708,14 +26718,7 @@ function Footer() {
           "div",
           {
             className: "absolute -top-32 left-1/2 -translate-x-1/2 w-[400px] h-[200px] blur-[80px] rounded-full pointer-events-none",
-            style: { background: "rgba(139,92,246,0.07)" }
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "absolute bottom-0 right-20 w-[300px] h-[200px] blur-[100px] rounded-full pointer-events-none",
-            style: { background: "rgba(109,40,217,0.05)" }
+            style: { background: "rgba(92,61,46,0.1)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-6 py-16", children: [
@@ -26728,9 +26731,9 @@ function Footer() {
                 viewport: { once: true },
                 transition: { duration: 0.6 },
                 children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-3xl font-light gradient-gold-text mb-1 tracking-wide", children: "Nidhi Bhatia" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "section-eyebrow mb-5", children: "Bridal Makeup Artist · Lucknow" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-foreground/50 leading-relaxed font-body max-w-xs", children: "Transforming brides into timeless beauties with artistry, passion, and precision. Every look — a masterpiece." })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-2xl font-semibold gradient-gold-text mb-1 tracking-wide", children: "Makeup by Snehal Pawar" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "section-eyebrow mb-5", children: "Beauty & Bridal Salon · Amravati" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-foreground/55 leading-relaxed font-body max-w-xs", children: "Transforming brides into timeless beauties with artistry, passion, and precision. Every look — a masterpiece crafted with love in Amravati." })
                 ]
               }
             ) }),
@@ -26748,7 +26751,7 @@ function Footer() {
                     {
                       type: "button",
                       onClick: () => scrollTo(link),
-                      className: "text-sm text-foreground/50 hover:text-gold transition-smooth flex items-center gap-2 group cursor-pointer font-body bg-transparent border-0 p-0",
+                      className: "text-sm text-foreground/55 hover:text-gold transition-smooth flex items-center gap-2 group cursor-pointer font-body bg-transparent border-0 p-0",
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-4 h-px bg-gold/40 group-hover:w-6 transition-all duration-300" }),
                         link
@@ -26767,24 +26770,22 @@ function Footer() {
                 transition: { duration: 0.6, delay: 0.2 },
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "text-gold text-xs tracking-widest uppercase font-body font-semibold mb-5", children: "Visit Us" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("address", { className: "not-italic space-y-3 text-sm text-foreground/50 font-body leading-relaxed", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("address", { className: "not-italic space-y-3 text-sm text-foreground/55 font-body leading-relaxed", children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-                      "Ground Floor, SALON MAKEUP ACADEMY",
+                      "Kondeshwar Vidyut Colony,",
                       /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                      "CP-3, Aashiyana Chauraha,",
+                      "near Radhey Radhey Milk Dairy,",
                       /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                      "near Power House Chauraha,",
+                      "Sai Nagar, Amravati,",
                       /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                      "Sector G, LDA Colony,",
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                      "Lucknow, UP 226012"
+                      "Maharashtra 444607"
                     ] }),
                     /* @__PURE__ */ jsxRuntimeExports.jsxs(
                       "a",
                       {
-                        href: "tel:+918112555544",
+                        href: "tel:+919561548151",
                         className: "flex items-center gap-2 hover:text-gold transition-smooth group",
-                        style: { color: "rgba(168,85,247,0.8)" },
+                        style: { color: "rgba(196,154,108,0.9)" },
                         children: [
                           /* @__PURE__ */ jsxRuntimeExports.jsx(
                             "svg",
@@ -26796,14 +26797,14 @@ function Footer() {
                               children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" })
                             }
                           ),
-                          "+91 81125 55544"
+                          "+91 95615 48151"
                         ]
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsxs(
                       "a",
                       {
-                        href: "https://wa.me/918112555544",
+                        href: "https://wa.me/919561548151",
                         target: "_blank",
                         rel: "noopener noreferrer",
                         className: "flex items-center gap-2 text-[#25D366]/80 hover:text-[#25D366] transition-smooth",
@@ -26827,11 +26828,11 @@ function Footer() {
             ) })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "divider-gold mb-8" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-foreground/30 font-body", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-foreground/40 font-body", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
               "© ",
               year,
-              " Nidhi Bhatia — Bridal Makeup Artist. All rights reserved."
+              " Makeup by Snehal Pawar and Academy. All rights reserved."
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
               "Built with love using",
@@ -26841,7 +26842,7 @@ function Footer() {
                 {
                   href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`,
                   className: "hover:text-gold transition-smooth",
-                  style: { color: "rgba(168,85,247,0.6)" },
+                  style: { color: "rgba(196,154,108,0.8)" },
                   target: "_blank",
                   rel: "noopener noreferrer",
                   children: "caffeine.ai"
@@ -26858,8 +26859,10 @@ const NAV_LINKS = [
   { label: "Home", href: "#hero" },
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "#why-choose-us" },
+  { label: "About", href: "#about" },
+  { label: "Academy", href: "#academy" },
   { label: "Reviews", href: "#testimonials" },
+  { label: "Book", href: "#book" },
   { label: "Contact", href: "#contact" }
 ];
 function scrollToSection(href) {
@@ -26881,8 +26884,8 @@ function Navbar() {
     "header",
     {
       "data-ocid": "navbar",
-      className: `fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "glass-dark shadow-glow-subtle border-b py-3" : "bg-transparent py-5"}`,
-      style: scrolled ? { borderBottomColor: "rgba(139,92,246,0.12)" } : {},
+      className: `fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-[rgba(250,247,242,0.97)] shadow-md border-b py-3" : "bg-transparent py-5"}`,
+      style: scrolled ? { borderBottomColor: "rgba(196,154,108,0.2)" } : {},
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-6 flex items-center justify-between", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -26896,19 +26899,19 @@ function Navbar() {
               transition: { duration: 0.6 },
               "data-ocid": "navbar.logo_link",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-2xl font-light tracking-widest gradient-gold-text", children: "Nidhi Bhatia" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-xl font-semibold tracking-wide gradient-gold-text", children: "Makeup by Snehal Pawar" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "span",
                   {
-                    className: "text-[0.6rem] tracking-[0.3em] uppercase font-body",
-                    style: { color: "rgba(168,85,247,0.65)" },
-                    children: "Bridal Makeup Artist"
+                    className: "text-[0.58rem] tracking-[0.25em] uppercase font-body",
+                    style: { color: "rgba(196,154,108,0.75)" },
+                    children: "Beauty & Bridal Salon · Amravati"
                   }
                 )
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("nav", { className: "hidden md:flex items-center gap-7", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("nav", { className: "hidden lg:flex items-center gap-5", children: [
             NAV_LINKS.map((link, i2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
               motion.a,
               {
@@ -26920,7 +26923,7 @@ function Navbar() {
                 className: "text-sm text-foreground/70 hover:text-gold transition-smooth relative group cursor-pointer font-body",
                 initial: { opacity: 0, y: -10 },
                 animate: { opacity: 1, y: 0 },
-                transition: { delay: 0.1 + i2 * 0.06, duration: 0.5 },
+                transition: { delay: 0.1 + i2 * 0.05, duration: 0.5 },
                 "data-ocid": `navbar.link.${i2 + 1}`,
                 children: [
                   link.label,
@@ -26949,7 +26952,7 @@ function Navbar() {
             "button",
             {
               type: "button",
-              className: "md:hidden flex flex-col gap-1.5 p-2",
+              className: "lg:hidden flex flex-col gap-1.5 p-3 min-h-[44px] min-w-[44px] items-center justify-center",
               onClick: () => setMenuOpen(!menuOpen),
               "aria-label": "Toggle menu",
               "data-ocid": "navbar.menu_toggle",
@@ -26958,21 +26961,21 @@ function Navbar() {
                   "span",
                   {
                     className: `block w-6 h-0.5 transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`,
-                    style: { background: "#a855f7" }
+                    style: { background: "#5C3D2E" }
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "span",
                   {
                     className: `block w-6 h-0.5 transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`,
-                    style: { background: "#a855f7" }
+                    style: { background: "#5C3D2E" }
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "span",
                   {
                     className: `block w-6 h-0.5 transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`,
-                    style: { background: "#a855f7" }
+                    style: { background: "#5C3D2E" }
                   }
                 )
               ]
@@ -26982,13 +26985,16 @@ function Navbar() {
         /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { children: menuOpen && /* @__PURE__ */ jsxRuntimeExports.jsx(
           motion.div,
           {
-            className: "md:hidden glass-dark border-t px-6 py-6",
-            style: { borderTopColor: "rgba(139,92,246,0.12)" },
+            className: "lg:hidden border-t",
+            style: {
+              background: "rgba(250,247,242,0.98)",
+              borderTopColor: "rgba(196,154,108,0.2)"
+            },
             initial: { opacity: 0, height: 0 },
             animate: { opacity: 1, height: "auto" },
             exit: { opacity: 0, height: 0 },
             transition: { duration: 0.3 },
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-4", children: [
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col px-6 py-4", children: [
               NAV_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx(
                 "a",
                 {
@@ -26998,7 +27004,7 @@ function Navbar() {
                     scrollToSection(link.href);
                     setMenuOpen(false);
                   },
-                  className: "text-foreground/80 hover:text-gold transition-smooth font-body text-sm tracking-wide",
+                  className: "py-3 px-2 text-foreground/80 hover:text-gold hover:bg-[#EFE3D0] rounded-lg transition-smooth font-body text-sm tracking-wide min-h-[48px] flex items-center",
                   children: link.label
                 },
                 link.href
@@ -27011,7 +27017,7 @@ function Navbar() {
                     scrollToSection("#contact");
                     setMenuOpen(false);
                   },
-                  className: "mt-2 px-5 py-2.5 rounded-full text-sm font-semibold gradient-gold text-white shadow-glow-gold w-full font-body",
+                  className: "mt-3 px-5 py-3 rounded-full text-sm font-semibold gradient-gold text-white w-full font-body min-h-[48px]",
                   "data-ocid": "navbar.mobile_book_now_button",
                   children: "Book Now"
                 }
@@ -78838,7 +78844,7 @@ function PurpleParticles() {
       "pointsMaterial",
       {
         size: 0.07,
-        color: "#a855f7",
+        color: "#C49A6C",
         transparent: true,
         opacity: 0.75,
         sizeAttenuation: true
@@ -78849,10 +78855,10 @@ function PurpleParticles() {
 function HeroScene() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("ambientLight", { intensity: 0.25 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [5, 5, 5], color: "#a855f7", intensity: 2.5 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [-5, -3, 3], color: "#7c3aed", intensity: 1.5 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [0, -5, -5], color: "#4c1d95", intensity: 1.2 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [3, 0, -2], color: "#c084fc", intensity: 1 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [5, 5, 5], color: "#C49A6C", intensity: 2.5 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [-5, -3, 3], color: "#8B6347", intensity: 1.5 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [0, -5, -5], color: "#5C3D1E", intensity: 1.2 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [3, 0, -2], color: "#D4A574", intensity: 1 }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       Stars,
       {
@@ -78873,7 +78879,7 @@ function HeroScene() {
         scale: [16, 12, 10],
         speed: 0.35,
         opacity: 0.65,
-        color: "#a855f7"
+        color: "#C49A6C"
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -78884,17 +78890,17 @@ function HeroScene() {
         scale: [12, 8, 6],
         speed: 0.5,
         opacity: 0.45,
-        color: "#c084fc"
+        color: "#D4A574"
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(PurpleParticles, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingOrb, { position: [-4.5, 1.5, -3], scale: 0.9, color: "#8b5cf6" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingOrb, { position: [-4.5, 1.5, -3], scale: 0.9, color: "#C49A6C" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       FloatingOrb,
       {
         position: [4, -1.5, -4],
         scale: 0.6,
-        color: "#7c3aed",
+        color: "#8B6347",
         speed: 1.8
       }
     ),
@@ -78903,7 +78909,7 @@ function HeroScene() {
       {
         position: [1.5, 3, -5],
         scale: 0.4,
-        color: "#a855f7",
+        color: "#C49A6C",
         speed: 2.2
       }
     ),
@@ -78912,7 +78918,7 @@ function HeroScene() {
       {
         position: [-2, -2.5, -2],
         scale: 0.3,
-        color: "#6d28d9",
+        color: "#5C3D1E",
         speed: 1.3
       }
     ),
@@ -78921,15 +78927,15 @@ function HeroScene() {
       {
         position: [3, 2.5, -6],
         scale: 0.45,
-        color: "#c084fc",
+        color: "#D4A574",
         speed: 1.6
       }
     ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingDiamond, { position: [-2.5, 3, -4], color: "#a855f7" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingDiamond, { position: [3.5, -2, -3], color: "#8b5cf6" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingDiamond, { position: [0, -3, -5], color: "#c084fc" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingRing, { position: [-3.5, -1, -3], color: "#7c3aed" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingRing, { position: [2.5, 2, -4], color: "#a855f7" })
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingDiamond, { position: [-2.5, 3, -4], color: "#C49A6C" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingDiamond, { position: [3.5, -2, -3], color: "#D4A574" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingDiamond, { position: [0, -3, -5], color: "#E8D5B7" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingRing, { position: [-3.5, -1, -3], color: "#8B6347" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingRing, { position: [2.5, 2, -4], color: "#C49A6C" })
   ] });
 }
 function Hero() {
@@ -78941,27 +78947,27 @@ function Hero() {
       "data-ocid": "hero.section",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 z-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Canvas, { camera: { position: [0, 0, 8], fov: 60 }, children: /* @__PURE__ */ jsxRuntimeExports.jsx(HeroScene, {}) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 z-10 bg-gradient-to-b from-black/65 via-transparent to-black/92 pointer-events-none" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 z-10 bg-gradient-to-r from-black/85 via-black/30 to-transparent pointer-events-none" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 z-10 bg-gradient-to-b from-[#3D2314]/55 via-transparent to-black/92 pointer-events-none" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 z-10 bg-gradient-to-r from-[#3D2314]/70 via-[#3D2314]/20 to-transparent pointer-events-none" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute top-1/3 left-1/4 w-[550px] h-[550px] rounded-full blur-[140px] pointer-events-none z-10",
-            style: { background: "rgba(139,92,246,0.08)" }
+            style: { background: "rgba(196,154,108,0.08)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute bottom-1/3 right-1/4 w-[450px] h-[450px] rounded-full blur-[110px] pointer-events-none z-10",
-            style: { background: "rgba(109,40,217,0.07)" }
+            style: { background: "rgba(140,96,71,0.07)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full blur-[160px] pointer-events-none z-10",
-            style: { background: "rgba(124,58,237,0.04)" }
+            style: { background: "rgba(196,154,108,0.04)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-20 w-full max-w-7xl mx-auto px-6 pt-28 pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center", children: [
@@ -78973,7 +78979,7 @@ function Hero() {
                 animate: { opacity: 1, y: 0 },
                 transition: { duration: 0.8, delay: 0.2 },
                 children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "section-eyebrow mb-4 animate-fade-in", children: "✦ Lucknow's Premier Bridal Makeup Artist" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "section-eyebrow mb-4 animate-fade-in", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "section-eyebrow mb-4 animate-fade-in", children: "✦ Amravati's Premier Bridal Makeup Artist" }) }),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display text-6xl md:text-7xl lg:text-8xl font-light leading-[0.95] tracking-tight", children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-gold-text", children: "Art of" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
@@ -78991,7 +78997,7 @@ function Hero() {
                 initial: { opacity: 0, y: 20 },
                 animate: { opacity: 1, y: 0 },
                 transition: { duration: 0.8, delay: 0.5 },
-                children: "From intimate ceremonies to grand royal weddings — Nidhi Bhatia crafts breathtaking bridal looks with precision, luxury, and an artist's eye for perfection. Trusted by celebrities across India."
+                children: "From intimate ceremonies to grand royal weddings — Snehal Pawar crafts breathtaking bridal looks with precision, luxury, and an artist's eye for perfection. Trusted by celebrities across India."
               }
             ),
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -79064,14 +79070,14 @@ function Hero() {
                   "div",
                   {
                     className: "absolute inset-0 rounded-full blur-2xl",
-                    style: { background: "rgba(139,92,246,0.15)" }
+                    style: { background: "rgba(196,154,108,0.15)" }
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative w-full h-full rounded-full overflow-hidden border-2 border-gold/35 shadow-glow-gold", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "img",
                   {
                     src: "/assets/images/nidhi-portrait.png",
-                    alt: "Nidhi Bhatia - Bridal Makeup Artist",
+                    alt: "Snehal Pawar - Bridal Makeup Artist",
                     className: "w-full h-full object-cover"
                   }
                 ) }),
@@ -79096,7 +79102,7 @@ function Hero() {
                   {
                     className: "w-3 h-3 rounded-full shadow-glow-gold",
                     style: {
-                      background: "#a855f7",
+                      background: "#C49A6C",
                       transformOrigin: "160px 160px"
                     },
                     animate: { rotate: 360 },
@@ -79127,18 +79133,21 @@ function Hero() {
     }
   );
 }
-const Services = reactExports.lazy(() => __vitePreload(() => import("./Services-CcoG2qFt.js"), true ? [] : void 0));
-const Portfolio = reactExports.lazy(() => __vitePreload(() => import("./Portfolio-B_IyIZ1A.js"), true ? [] : void 0));
-const WhyChooseUs = reactExports.lazy(() => __vitePreload(() => import("./WhyChooseUs-CP15Ip_4.js"), true ? [] : void 0));
-const CelebrityWork = reactExports.lazy(() => __vitePreload(() => import("./CelebrityWork-DtXBHyDo.js"), true ? [] : void 0));
-const Testimonials = reactExports.lazy(() => __vitePreload(() => import("./Testimonials-DAOrWLL4.js"), true ? [] : void 0));
-const FAQSection = reactExports.lazy(() => __vitePreload(() => import("./FAQSection-3dpKu5nO.js"), true ? [] : void 0));
-const ContactMap = reactExports.lazy(() => __vitePreload(() => import("./ContactMap-BIu16DYv.js"), true ? [] : void 0));
+const Services = reactExports.lazy(() => __vitePreload(() => import("./Services--92Ys70u.js"), true ? [] : void 0));
+const Portfolio = reactExports.lazy(() => __vitePreload(() => import("./Portfolio-CUrZSiqD.js"), true ? [] : void 0));
+const WhyChooseUs = reactExports.lazy(() => __vitePreload(() => import("./WhyChooseUs-DxhV401o.js"), true ? [] : void 0));
+const CelebrityWork = reactExports.lazy(() => __vitePreload(() => import("./CelebrityWork-BnNPScMW.js"), true ? [] : void 0));
+const Testimonials = reactExports.lazy(() => __vitePreload(() => import("./Testimonials-0MnLbqHU.js"), true ? [] : void 0));
+const FAQSection = reactExports.lazy(() => __vitePreload(() => import("./FAQSection-C_LB0Oyc.js"), true ? [] : void 0));
+const ContactMap = reactExports.lazy(() => __vitePreload(() => import("./ContactMap-B9pkSj5S.js"), true ? [] : void 0));
+const About = reactExports.lazy(() => __vitePreload(() => import("./About-CD0ca56-.js"), true ? [] : void 0));
+const Academy = reactExports.lazy(() => __vitePreload(() => import("./Academy-CsCJg5oN.js"), true ? [] : void 0));
+const BookAppointment = reactExports.lazy(() => __vitePreload(() => import("./BookAppointment-DfJy0SNz.js"), true ? [] : void 0));
 function SectionLoader() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-center py-24", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 border-2 border-gold/30 border-t-gold rounded-full animate-spin" }) });
 }
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-deep-dark text-foreground overflow-x-hidden", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-[#FAF7F2] text-[#5C3D2E] overflow-x-hidden", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingButtons, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { children: [
@@ -79149,7 +79158,10 @@ function App() {
       /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(SectionLoader, {}), children: /* @__PURE__ */ jsxRuntimeExports.jsx(CelebrityWork, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(SectionLoader, {}), children: /* @__PURE__ */ jsxRuntimeExports.jsx(Testimonials, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(SectionLoader, {}), children: /* @__PURE__ */ jsxRuntimeExports.jsx(FAQSection, {}) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(SectionLoader, {}), children: /* @__PURE__ */ jsxRuntimeExports.jsx(ContactMap, {}) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(SectionLoader, {}), children: /* @__PURE__ */ jsxRuntimeExports.jsx(ContactMap, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(SectionLoader, {}), children: /* @__PURE__ */ jsxRuntimeExports.jsx(About, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(SectionLoader, {}), children: /* @__PURE__ */ jsxRuntimeExports.jsx(Academy, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(SectionLoader, {}), children: /* @__PURE__ */ jsxRuntimeExports.jsx(BookAppointment, {}) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
   ] });
@@ -79168,6 +79180,7 @@ export {
   MeshStandardMaterial as M,
   Sparkles as S,
   _extends as _,
+  resolveElements as a,
   jsxRuntimeExports as j,
   motion as m,
   reactExports as r,

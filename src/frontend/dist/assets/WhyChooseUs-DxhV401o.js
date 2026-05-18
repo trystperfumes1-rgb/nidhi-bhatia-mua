@@ -1,4 +1,4 @@
-import { j as jsxRuntimeExports, C as Canvas, m as motion, S as Sparkles, r as reactExports, u as useFrame, F as Float } from "./index-C50xJWGr.js";
+import { j as jsxRuntimeExports, C as Canvas, m as motion, S as Sparkles, r as reactExports, u as useFrame, F as Float } from "./index-CfpckDaP.js";
 function RotatingTorus({
   position,
   color,
@@ -57,9 +57,9 @@ function FloatingStar({
 function WhyScene() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("ambientLight", { intensity: 0.3 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [4, 4, 4], color: "#a855f7", intensity: 2.5 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [-4, -2, 3], color: "#7c3aed", intensity: 2 }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [0, -4, 2], color: "#c084fc", intensity: 1.2 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [4, 4, 4], color: "#C49A6C", intensity: 2.5 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [-4, -2, 3], color: "#5C3D2E", intensity: 2 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("pointLight", { position: [0, -4, 2], color: "#E8D5B7", intensity: 1.2 }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       Sparkles,
       {
@@ -68,25 +68,25 @@ function WhyScene() {
         scale: [14, 10, 6],
         speed: 0.3,
         opacity: 0.45,
-        color: "#8b5cf6"
+        color: "#C49A6C"
       }
     ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(RotatingTorus, { position: [-4, 2, -3], color: "#a855f7" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(RotatingTorus, { position: [-4, 2, -3], color: "#C49A6C" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       RotatingTorus,
       {
         position: [4, -2, -4],
-        color: "#8b5cf6",
+        color: "#C49A6C",
         speed: 1.3,
         tubeRadius: 0.1
       }
     ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(RotatingTorus, { position: [1, 3, -5], color: "#7c3aed", speed: 0.8 }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(RotatingTorus, { position: [1, 3, -5], color: "#5C3D2E", speed: 0.8 }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       RotatingTorus,
       {
         position: [-2, -3, -4],
-        color: "#c084fc",
+        color: "#E8D5B7",
         speed: 1.6,
         tubeRadius: 0.08
       }
@@ -95,14 +95,14 @@ function WhyScene() {
       RotatingTorus,
       {
         position: [3, 1, -3],
-        color: "#6d28d9",
+        color: "#5C3D2E",
         speed: 1.1,
         tubeRadius: 0.18
       }
     ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingStar, { position: [-3, 0, -3], color: "#a855f7" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingStar, { position: [2.5, -1, -2], color: "#c084fc" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingStar, { position: [-1, 3.5, -4], color: "#8b5cf6" })
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingStar, { position: [-3, 0, -3], color: "#C49A6C" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingStar, { position: [2.5, -1, -2], color: "#E8D5B7" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingStar, { position: [-1, 3.5, -4], color: "#C49A6C" })
   ] });
 }
 const REASONS = [
@@ -149,7 +149,7 @@ const REASONS = [
   {
     id: "salon",
     title: "Premium Studio Setup",
-    description: "State-of-the-art studio in LDA Colony, Lucknow with professional lighting, a hygiene-first approach, and a serene bridal experience.",
+    description: "State-of-the-art studio in Sai Nagar, Amravati with professional lighting, a hygiene-first approach, and a serene bridal experience.",
     icon: "🏛️",
     stat: "5★",
     statLabel: "Studio"
@@ -172,7 +172,7 @@ function ReasonCard({ item, index }) {
             "div",
             {
               className: "flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition-smooth animate-depth-pulse",
-              style: { background: "rgba(139,92,246,0.12)" },
+              style: { background: "rgba(196,154,108,0.12)" },
               children: item.icon
             }
           ),
@@ -194,7 +194,7 @@ function WhyChooseUs() {
     "section",
     {
       id: "why-choose-us",
-      className: "relative py-28 bg-luxury-950 overflow-hidden",
+      className: "relative py-28 bg-[#FAF7F2] overflow-hidden",
       "data-ocid": "why.section",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 opacity-25 pointer-events-none", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Canvas, { camera: { position: [0, 0, 8], fov: 55 }, children: /* @__PURE__ */ jsxRuntimeExports.jsx(WhyScene, {}) }) }),
@@ -202,14 +202,14 @@ function WhyChooseUs() {
           "div",
           {
             className: "absolute -top-20 right-10 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none",
-            style: { background: "rgba(139,92,246,0.06)" }
+            style: { background: "rgba(196,154,108,0.08)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute bottom-10 left-0 w-[400px] h-[400px] rounded-full blur-[100px] pointer-events-none",
-            style: { background: "rgba(109,40,217,0.05)" }
+            style: { background: "rgba(92,61,46,0.06)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/25 to-transparent" }),
@@ -226,11 +226,11 @@ function WhyChooseUs() {
                 /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "section-eyebrow mb-4", children: "✦ Why Choose Us" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-5xl md:text-6xl font-light text-foreground mb-5 tracking-wide", children: [
                   "The ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-gold-text italic", children: "Nidhi Bhatia" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "gradient-gold-text italic", children: "Snehal Pawar" }),
                   " ",
                   "Difference"
                 ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground/50 font-body text-lg max-w-2xl mx-auto", children: "When you choose Nidhi Bhatia, you're not just booking a makeup artist — you're investing in a legacy of artistry, trust, and uncompromising excellence." })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground/50 font-body text-lg max-w-2xl mx-auto", children: "When you choose Snehal Pawar, you're not just booking a makeup artist — you're investing in a legacy of artistry, trust, and uncompromising excellence." })
               ]
             }
           ),
@@ -246,7 +246,7 @@ function WhyChooseUs() {
               children: [
                 {
                   src: "/assets/images/nidhi-doing-makeup.png",
-                  alt: "Nidhi Bhatia at work"
+                  alt: "Snehal Pawar at work"
                 },
                 {
                   src: "/assets/images/salon-interior.png",
@@ -271,13 +271,13 @@ function WhyChooseUs() {
                         loading: "lazy"
                       }
                     ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-t from-luxury-950/65 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-t from-[#3D2314]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 border border-gold/0 group-hover:border-gold/25 rounded-xl transition-all duration-300" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "div",
                       {
                         className: "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500",
-                        style: { boxShadow: "inset 0 0 30px rgba(139,92,246,0.15)" }
+                        style: { boxShadow: "inset 0 0 30px rgba(196,154,108,0.15)" }
                       }
                     )
                   ]

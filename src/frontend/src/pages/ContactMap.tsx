@@ -51,24 +51,24 @@ export default function ContactMap() {
   const inputClass =
     "w-full border rounded-xl px-4 py-3 text-sm text-foreground font-body placeholder:text-foreground/25 outline-none transition-smooth focus:shadow-glow-subtle";
   const inputStyle = {
-    background: "rgba(10,8,20,0.65)",
-    borderColor: "rgba(139,92,246,0.18)",
+    background: "rgba(250,247,242,0.92)",
+    borderColor: "rgba(196,154,108,0.25)",
   };
 
   return (
     <section
       id="contact"
-      className="relative py-28 bg-luxury-950 overflow-hidden"
+      className="relative py-28 bg-[#FAF7F2] overflow-hidden"
       data-ocid="contact.section"
     >
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/28 to-transparent" />
       <div
         className="absolute -top-40 left-0 w-[500px] h-[400px] rounded-full blur-[120px] pointer-events-none"
-        style={{ background: "rgba(139,92,246,0.06)" }}
+        style={{ background: "rgba(196,154,108,0.07)" }}
       />
       <div
         className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full blur-[100px] pointer-events-none"
-        style={{ background: "rgba(109,40,217,0.05)" }}
+        style={{ background: "rgba(196,154,108,0.06)" }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -280,14 +280,14 @@ export default function ContactMap() {
                   icon: "📍",
                   title: "Visit Us",
                   content:
-                    "Ground Floor, Salon Makeup Academy, CP-3, Aashiyana Chauraha, Sector G, LDA Colony, Lucknow 226012",
+                    "Kondeshwar Vidyut Colony, near Radhey Radhey Milk Dairy, Sai Nagar, Amravati, Maharashtra 444607",
                   link: null,
                 },
                 {
                   icon: "📞",
                   title: "Call / WhatsApp",
-                  content: "+91 81125 55544",
-                  link: "tel:+918112555544",
+                  content: "+91 95615 48151",
+                  link: "tel:+919561548151",
                 },
                 {
                   icon: "🕐",
@@ -298,7 +298,7 @@ export default function ContactMap() {
                 {
                   icon: "📱",
                   title: "Instagram",
-                  content: "@nidhimbhatia",
+                  content: "@makeupbysnehalpawar",
                   link: "https://www.instagram.com/",
                 },
               ].map((item) => (
@@ -331,17 +331,17 @@ export default function ContactMap() {
               className="relative rounded-2xl overflow-hidden shadow-card-luxury"
               style={{
                 height: "320px",
-                border: "1px solid rgba(139,92,246,0.18)",
+                border: "1px solid rgba(196,154,108,0.2)",
               }}
             >
               <iframe
-                title="Nidhi Bhatia Salon Location"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=80.9300%2C26.8500%2C80.9600%2C26.8700&layer=mapnik&marker=26.8600%2C80.9450"
+                title="Makeup by Snehal Pawar Studio Location"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=77.7323%2C20.9120%2C77.7723%2C20.9520&layer=mapnik&marker=20.9320%2C77.7523"
                 width="100%"
                 height="100%"
                 style={{
                   border: 0,
-                  filter: "invert(90%) hue-rotate(220deg) saturate(0.7)",
+                  filter: "none",
                 }}
                 allowFullScreen
                 loading="lazy"
@@ -350,14 +350,14 @@ export default function ContactMap() {
               />
               <div
                 className="absolute inset-0 pointer-events-none rounded-2xl"
-                style={{ border: "1px solid rgba(139,92,246,0.18)" }}
+                style={{ border: "1px solid rgba(196,154,108,0.2)" }}
               />
             </div>
 
             {/* CTA strip */}
             <div
               className="glass border rounded-2xl p-5 flex items-center gap-5"
-              style={{ borderColor: "rgba(139,92,246,0.18)" }}
+              style={{ borderColor: "rgba(196,154,108,0.2)" }}
             >
               <div className="flex-1">
                 <p className="font-display text-lg text-foreground font-semibold tracking-wide">
@@ -368,7 +368,7 @@ export default function ContactMap() {
                 </p>
               </div>
               <a
-                href="https://wa.me/918112555544"
+                href="https://wa.me/919561548151"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-shrink-0 px-6 py-3 rounded-full bg-[#25D366] text-white font-body font-semibold text-sm hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-smooth"

@@ -1,4 +1,4 @@
-import { r as reactExports, j as jsxRuntimeExports, m as motion, A as AnimatePresence } from "./index-C50xJWGr.js";
+import { r as reactExports, j as jsxRuntimeExports, m as motion, A as AnimatePresence } from "./index-CfpckDaP.js";
 const CATEGORIES = ["All", "Bridal", "Editorial", "Party", "Celebrity"];
 const PORTFOLIO = [
   {
@@ -66,14 +66,14 @@ function Portfolio() {
     "section",
     {
       id: "portfolio",
-      className: "relative py-28 bg-luxury-950 overflow-hidden",
+      className: "relative py-28 bg-[#F5EDE0] overflow-hidden",
       "data-ocid": "portfolio.section",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute -bottom-40 left-0 w-[600px] h-[400px] rounded-full blur-[100px] pointer-events-none",
-            style: { background: "rgba(139,92,246,0.05)" }
+            style: { background: "rgba(92,61,46,0.05)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/18 to-transparent" }),
@@ -111,7 +111,7 @@ function Portfolio() {
                   type: "button",
                   onClick: () => setActiveCategory(cat),
                   className: `px-5 py-2 rounded-full text-sm font-body font-semibold tracking-wider transition-smooth ${activeCategory === cat ? "gradient-gold text-white shadow-glow-subtle" : "glass text-foreground/60 hover:text-gold"}`,
-                  style: activeCategory !== cat ? { border: "1px solid rgba(139,92,246,0.18)" } : {},
+                  style: activeCategory !== cat ? { border: "1px solid rgba(196,154,108,0.30)" } : {},
                   "data-ocid": `portfolio.filter.${cat.toLowerCase()}`,
                   children: cat
                 },
@@ -155,7 +155,7 @@ function Portfolio() {
                         exit: { opacity: 0 },
                         className: "absolute inset-0 flex flex-col justify-end p-4",
                         style: {
-                          background: "linear-gradient(to top, rgba(10,8,20,0.92) 0%, rgba(10,8,20,0.4) 50%, transparent 100%)"
+                          background: "linear-gradient(to top, rgba(61,35,20,0.85) 0%, rgba(92,61,46,0.35) 50%, transparent 100%)"
                         },
                         children: [
                           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-gold tracking-widest uppercase font-body mb-1 font-semibold", children: item.category }),
@@ -168,7 +168,7 @@ function Portfolio() {
                       {
                         className: "absolute inset-0 rounded-xl transition-all duration-300",
                         style: {
-                          border: hoveredId === item.id ? "1px solid rgba(139,92,246,0.28)" : "1px solid transparent"
+                          border: hoveredId === item.id ? "1px solid rgba(196,154,108,0.4)" : "1px solid transparent"
                         }
                       }
                     ),
@@ -177,7 +177,7 @@ function Portfolio() {
                       {
                         className: "absolute inset-0 pointer-events-none",
                         style: {
-                          boxShadow: "inset 0 0 25px rgba(139,92,246,0.12)"
+                          boxShadow: "inset 0 0 25px rgba(196,154,108,0.15)"
                         }
                       }
                     )
@@ -202,7 +202,7 @@ function Portfolio() {
                   target: "_blank",
                   rel: "noopener noreferrer",
                   className: "inline-flex items-center gap-3 px-8 py-3.5 rounded-full glass text-gold font-body font-semibold text-sm hover:shadow-glow-subtle transition-smooth group",
-                  style: { border: "1px solid rgba(139,92,246,0.22)" },
+                  style: { border: "1px solid rgba(196,154,108,0.3)" },
                   "data-ocid": "portfolio.instagram_link",
                   children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(

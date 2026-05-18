@@ -5,7 +5,7 @@ import { useRef } from "react";
 import type { Mesh } from "three";
 import type { CelebrityWork as CelebrityWorkType } from "../types";
 
-function PurpleCrystal({
+function WarmCrystal({
   position,
   speed = 1,
 }: { position: [number, number, number]; speed?: number }) {
@@ -23,10 +23,10 @@ function PurpleCrystal({
       <mesh ref={ref} position={position}>
         <octahedronGeometry args={[0.75, 0]} />
         <meshStandardMaterial
-          color="#8b5cf6"
+          color="#C49A6C"
           metalness={1}
           roughness={0}
-          emissive="#8b5cf6"
+          emissive="#C49A6C"
           emissiveIntensity={0.55}
           transparent
           opacity={0.9}
@@ -36,7 +36,7 @@ function PurpleCrystal({
   );
 }
 
-function PurpleDodecahedron({
+function WarmDodecahedron({
   position,
 }: { position: [number, number, number] }) {
   const ref = useRef<Mesh>(null);
@@ -51,10 +51,10 @@ function PurpleDodecahedron({
       <mesh ref={ref} position={position}>
         <dodecahedronGeometry args={[0.5, 0]} />
         <meshStandardMaterial
-          color="#a855f7"
+          color="#C49A6C"
           metalness={0.95}
           roughness={0.05}
-          emissive="#7c3aed"
+          emissive="#5C3D2E"
           emissiveIntensity={0.4}
           transparent
           opacity={0.85}
@@ -68,16 +68,16 @@ function CelebScene() {
   return (
     <>
       <ambientLight intensity={0.45} />
-      <pointLight position={[5, 5, 3]} color="#a855f7" intensity={3.5} />
-      <pointLight position={[-5, -3, 2]} color="#7c3aed" intensity={2.5} />
-      <pointLight position={[0, 3, 4]} color="#c084fc" intensity={1.5} />
+      <pointLight position={[5, 5, 3]} color="#C49A6C" intensity={3.5} />
+      <pointLight position={[-5, -3, 2]} color="#5C3D2E" intensity={2.5} />
+      <pointLight position={[0, 3, 4]} color="#E8D5B7" intensity={1.5} />
       <Sparkles
         count={60}
         size={2.5}
         scale={[14, 10, 8]}
         speed={0.35}
         opacity={0.85}
-        color="#a855f7"
+        color="#C49A6C"
       />
       <Sparkles
         count={30}
@@ -85,13 +85,13 @@ function CelebScene() {
         scale={[10, 7, 5]}
         speed={0.55}
         opacity={0.5}
-        color="#c084fc"
+        color="#E8D5B7"
       />
-      <PurpleCrystal position={[-4, 2, -3]} />
-      <PurpleCrystal position={[4, -1, -4]} speed={1.3} />
-      <PurpleCrystal position={[0, 3, -5]} speed={0.8} />
-      <PurpleDodecahedron position={[-1.5, -2.5, -3]} />
-      <PurpleDodecahedron position={[2.5, 2, -4]} />
+      <WarmCrystal position={[-4, 2, -3]} />
+      <WarmCrystal position={[4, -1, -4]} speed={1.3} />
+      <WarmCrystal position={[0, 3, -5]} speed={0.8} />
+      <WarmDodecahedron position={[-1.5, -2.5, -3]} />
+      <WarmDodecahedron position={[2.5, 2, -4]} />
     </>
   );
 }
@@ -126,7 +126,7 @@ const CELEBRITIES: CelebrityWorkType[] = [
     name: "Political Dignitary",
     title: "State Function Appearance",
     description:
-      "Provided exclusive makeup artistry for a prominent political personality for high-profile state functions and press conferences across Uttar Pradesh.",
+      "Provided exclusive makeup artistry for a prominent political personality for high-profile state functions and press conferences across Maharashtra.",
     tags: ["VIP Client", "State Event", "Exclusive"],
   },
 ];
@@ -135,7 +135,7 @@ export default function CelebrityWork() {
   return (
     <section
       id="celebrity"
-      className="relative py-28 bg-section-dark overflow-hidden"
+      className="relative py-28 bg-[#F5EDE0] overflow-hidden"
       data-ocid="celebrity.section"
     >
       {/* 3D Canvas */}
@@ -146,12 +146,12 @@ export default function CelebrityWork() {
       </div>
 
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/35 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-luxury-950/40 via-transparent to-luxury-950/40 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#F5EDE0]/50 via-transparent to-[#F5EDE0]/50 pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 50% 50%, rgba(139,92,246,0.04) 0%, transparent 70%)",
+            "radial-gradient(ellipse at 50% 50%, rgba(196,154,108,0.06) 0%, transparent 70%)",
         }}
       />
 
@@ -168,7 +168,7 @@ export default function CelebrityWork() {
             Trusted by <span className="gradient-gold-text italic">Stars</span>
           </h2>
           <p className="text-foreground/50 font-body text-lg max-w-2xl mx-auto">
-            From Bollywood film sets to national television — Nidhi Bhatia's
+            From Bollywood film sets to national television — Snehal Pawar's
             artistry has graced the faces of some of India's most celebrated
             personalities.
           </p>
@@ -182,12 +182,12 @@ export default function CelebrityWork() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-luxury-950 via-luxury-800/80 to-luxury-950" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#EFE3D0] via-[#EFE3D0]/70 to-[#EFE3D0]" />
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(135deg, rgba(139,92,246,0.06) 0%, transparent 50%, rgba(109,40,217,0.06) 100%)",
+                "linear-gradient(135deg, rgba(196,154,108,0.08) 0%, transparent 50%, rgba(92,61,46,0.06) 100%)",
             }}
           />
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/55 to-transparent" />
@@ -200,7 +200,7 @@ export default function CelebrityWork() {
                 <br /> celebrity
               </h3>
               <p className="text-foreground/60 font-body leading-relaxed mb-7">
-                Nidhi Bhatia has built a reputation as one of Lucknow's most
+                Snehal Pawar has built a reputation as one of Amravati's most
                 sought-after makeup artists for celebrity clientele. Her eye for
                 detail, speed of execution, and mastery of photogenic finishes
                 have earned her trusted partnerships with film productions,
@@ -242,7 +242,7 @@ export default function CelebrityWork() {
                     transition={{ duration: 0.5, delay: i * 0.1 }}
                     whileHover={{
                       scale: 1.04,
-                      boxShadow: "0 0 30px rgba(139,92,246,0.25)",
+                      boxShadow: "0 0 30px rgba(196,154,108,0.28)",
                     }}
                   >
                     <img
@@ -251,10 +251,10 @@ export default function CelebrityWork() {
                       className="w-full h-full object-cover"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-luxury-950/65 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#3D2314]/50 to-transparent" />
                     <div
                       className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300"
-                      style={{ background: "rgba(139,92,246,0.08)" }}
+                      style={{ background: "rgba(196,154,108,0.08)" }}
                     />
                   </motion.div>
                 ))}
@@ -262,7 +262,7 @@ export default function CelebrityWork() {
               {/* Purple glow effect */}
               <div
                 className="absolute inset-0 rounded-2xl -z-10 blur-3xl"
-                style={{ background: "rgba(139,92,246,0.07)" }}
+                style={{ background: "rgba(196,154,108,0.08)" }}
               />
             </div>
           </div>
@@ -303,9 +303,9 @@ export default function CelebrityWork() {
                     key={tag}
                     className="px-3 py-1 rounded-full border text-xs font-body tracking-wide"
                     style={{
-                      background: "rgba(139,92,246,0.08)",
-                      borderColor: "rgba(139,92,246,0.18)",
-                      color: "rgba(168,85,247,0.75)",
+                      background: "rgba(196,154,108,0.08)",
+                      borderColor: "rgba(196,154,108,0.18)",
+                      color: "rgba(196,154,108,0.75)",
                     }}
                   >
                     {tag}

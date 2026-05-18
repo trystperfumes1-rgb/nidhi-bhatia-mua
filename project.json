@@ -1,27 +1,25 @@
 {
-  "overview": "Luxury 3D animated portfolio website for Nidhi Bhatia, Bridal Makeup Artist based in Lucknow. Features a premium dark-themed design with Three.js particle effects, glow and blur aesthetics, celebrity endorsement section, full services showcase, Indian testimonials, FAQ, and embedded Google Maps — designed to attract high-end bridal clients.",
+  "overview": "Premium beauty and bridal salon website for Makeup by Snehal Pawar and Academy in Amravati, Maharashtra. Features a warm brown and beige light theme with 3D animations, comprehensive service showcase, beauty academy section, and online appointment booking.",
   "features": [
-    "Full 3D animated hero with floating particles and orbs",
-    "Premium dark theme with gold/rose-gold glow effects",
-    "Services section with animated cards",
-    "9 real portfolio photos displayed in 3D gallery",
-    "Celebrity collaborations highlight section",
-    "Indian reviews with star ratings",
-    "FAQ accordion with smooth animations",
-    "Google Maps embed for studio location",
-    "Floating WhatsApp call button and Instagram button",
-    "Scroll-triggered animations throughout"
+    "Full identity rebrand to Makeup by Snehal Pawar and Academy",
+    "Warm brown and beige light theme throughout",
+    "Mobile-friendly navigation with hamburger menu",
+    "About & Our Story page with timeline",
+    "Academy & Training Courses page",
+    "Book Appointment page with WhatsApp integration",
+    "Updated address, phone, and location to Amravati Maharashtra",
+    "3D animated sections with warm gold/brown accents",
+    "Google Maps embed with Amravati coordinates"
   ],
-  "category": "portfolio",
+  "category": "business",
   "tags": [
-    "makeup-artist",
+    "beauty",
+    "makeup",
     "bridal",
-    "3d-animations",
-    "luxury",
-    "portfolio",
-    "dark-theme",
-    "lucknow",
-    "indian-wedding"
+    "salon",
+    "academy",
+    "amravati",
+    "maharashtra"
   ],
-  "last_updated": "2026-04-17T19:47:08.816Z"
+  "last_updated": "2026-05-18T06:33:37.597Z"
 }

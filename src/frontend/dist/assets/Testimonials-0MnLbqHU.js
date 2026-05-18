@@ -1,20 +1,20 @@
-import { r as reactExports, j as jsxRuntimeExports, m as motion, A as AnimatePresence } from "./index-C50xJWGr.js";
+import { r as reactExports, j as jsxRuntimeExports, m as motion, A as AnimatePresence } from "./index-CfpckDaP.js";
 const REVIEWS = [
   {
     id: "1",
     name: "Priya Sharma",
-    location: "Lucknow, UP",
+    location: "Amravati, MH",
     rating: 5,
-    text: "Nidhi di made my wedding day absolutely magical. My makeup lasted 14 hours through tears, dancing, and everything in between. Every photo is stunning. She truly understood my vision and executed it to perfection.",
+    text: "Snehal di made my wedding day absolutely magical. My makeup lasted 14 hours through tears, dancing, and everything in between. Every photo is stunning. She truly understood my vision and executed it to perfection.",
     service: "Bridal Makeup",
     date: "December 2024"
   },
   {
     id: "2",
     name: "Ananya Gupta",
-    location: "Kanpur, UP",
+    location: "Nagpur, MH",
     rating: 5,
-    text: "I had my engagement and wedding makeup both done by Nidhi. The transformation was beyond what I imagined — I literally didn't recognize myself in the mirror (in the best way). She's a true artist!",
+    text: "I had my engagement and wedding makeup both done by Snehal. The transformation was beyond what I imagined — I literally didn't recognize myself in the mirror (in the best way). She's a true artist!",
     service: "Bridal & Engagement",
     date: "November 2024"
   },
@@ -23,34 +23,34 @@ const REVIEWS = [
     name: "Riya Malhotra",
     location: "Delhi, NCR",
     rating: 5,
-    text: "Nidhi is THE best bridal makeup artist I've ever come across. Her attention to detail is incredible. The airbrush technique she used for my wedding was flawless in all 4K photos. 1000% recommend.",
+    text: "Snehal is THE best bridal makeup artist I've ever come across. Her attention to detail is incredible. The airbrush technique she used for my wedding was flawless in all 4K photos. 1000% recommend.",
     service: "Airbrush Bridal",
     date: "October 2024"
   },
   {
     id: "4",
     name: "Sunita Verma",
-    location: "Lucknow, UP",
+    location: "Amravati, MH",
     rating: 5,
-    text: "I was very nervous about my bridal look but Nidhi put me completely at ease. She took time to understand my preferences and the result was exactly what I dreamed of. Professional, warm, and incredibly talented.",
+    text: "I was very nervous about my bridal look but Snehal put me completely at ease. She took time to understand my preferences and the result was exactly what I dreamed of. Professional, warm, and incredibly talented.",
     service: "Bridal Makeup",
     date: "September 2024"
   },
   {
     id: "5",
     name: "Kavitha Iyer",
-    location: "Bengaluru (Destination Wedding in Lucknow)",
+    location: "Bengaluru (Destination Wedding in Amravati)",
     rating: 5,
-    text: "We came all the way from Bangalore for our Lucknow wedding and specifically chose Nidhi based on her Instagram portfolio. She exceeded every expectation. My South Indian bridal look was absolutely stunning!",
+    text: "We came all the way from Bangalore for our Amravati wedding and specifically chose Snehal based on her Instagram portfolio. She exceeded every expectation. My South Indian bridal look was absolutely stunning!",
     service: "South Indian Bridal",
     date: "August 2024"
   },
   {
     id: "6",
     name: "Meera Saxena",
-    location: "Lucknow, UP",
+    location: "Amravati, MH",
     rating: 5,
-    text: "I've been going to Nidhi for all my events for 3 years. Whether it's a party, sangeet or wedding — she always delivers. Her salon is beautiful, hygienic and she's always on time. Best investment!",
+    text: "I've been going to Snehal for all my events for 3 years. Whether it's a party, sangeet or wedding — she always delivers. Her salon is beautiful, hygienic and she's always on time. Best investment!",
     service: "Regular Client",
     date: "July 2024"
   }
@@ -104,14 +104,14 @@ function Testimonials() {
     "section",
     {
       id: "testimonials",
-      className: "relative py-28 bg-luxury-950 overflow-hidden",
+      className: "relative py-28 bg-[#FAF7F2] overflow-hidden",
       "data-ocid": "testimonials.section",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full blur-[120px] pointer-events-none",
-            style: { background: "rgba(124,58,237,0.06)" }
+            style: { background: "rgba(196,154,108,0.07)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/25 to-transparent" }),
@@ -119,7 +119,7 @@ function Testimonials() {
           "div",
           {
             className: "absolute bottom-20 right-0 w-[350px] h-[350px] rounded-full blur-[100px] pointer-events-none",
-            style: { background: "rgba(139,92,246,0.05)" }
+            style: { background: "rgba(196,154,108,0.06)" }
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 max-w-7xl mx-auto px-6", children: [

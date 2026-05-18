@@ -23,7 +23,7 @@ export default function FloatingButtons() {
           >
             {/* WhatsApp */}
             <motion.a
-              href="https://wa.me/918112555544"
+              href="https://wa.me/919561548151"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 bg-[#25D366] rounded-full shadow-lg hover:shadow-[0_0_25px_rgba(37,211,102,0.5)] transition-smooth overflow-hidden"
@@ -51,10 +51,10 @@ export default function FloatingButtons() {
 
             {/* Call button — purple gradient */}
             <motion.a
-              href="tel:+918112555544"
+              href="tel:+919561548151"
               className="group flex items-center gap-2 rounded-full overflow-hidden transition-smooth shadow-glow-gold hover:shadow-glow-elevated"
               style={{
-                background: "linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)",
+                background: "linear-gradient(135deg, #3D2314 0%, #C49A6C 100%)",
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}

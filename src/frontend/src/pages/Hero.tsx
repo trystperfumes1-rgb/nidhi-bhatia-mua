@@ -128,7 +128,7 @@ function PurpleParticles() {
       </bufferGeometry>
       <pointsMaterial
         size={0.07}
-        color="#a855f7"
+        color="#C49A6C"
         transparent
         opacity={0.75}
         sizeAttenuation
@@ -141,10 +141,10 @@ function HeroScene() {
   return (
     <>
       <ambientLight intensity={0.25} />
-      <pointLight position={[5, 5, 5]} color="#a855f7" intensity={2.5} />
-      <pointLight position={[-5, -3, 3]} color="#7c3aed" intensity={1.5} />
-      <pointLight position={[0, -5, -5]} color="#4c1d95" intensity={1.2} />
-      <pointLight position={[3, 0, -2]} color="#c084fc" intensity={1.0} />
+      <pointLight position={[5, 5, 5]} color="#C49A6C" intensity={2.5} />
+      <pointLight position={[-5, -3, 3]} color="#8B6347" intensity={1.5} />
+      <pointLight position={[0, -5, -5]} color="#5C3D1E" intensity={1.2} />
+      <pointLight position={[3, 0, -2]} color="#D4A574" intensity={1.0} />
 
       <Stars
         radius={100}
@@ -161,7 +161,7 @@ function HeroScene() {
         scale={[16, 12, 10]}
         speed={0.35}
         opacity={0.65}
-        color="#a855f7"
+        color="#C49A6C"
       />
       <Sparkles
         count={40}
@@ -169,43 +169,43 @@ function HeroScene() {
         scale={[12, 8, 6]}
         speed={0.5}
         opacity={0.45}
-        color="#c084fc"
+        color="#D4A574"
       />
 
       <PurpleParticles />
 
-      <FloatingOrb position={[-4.5, 1.5, -3]} scale={0.9} color="#8b5cf6" />
+      <FloatingOrb position={[-4.5, 1.5, -3]} scale={0.9} color="#C49A6C" />
       <FloatingOrb
         position={[4, -1.5, -4]}
         scale={0.6}
-        color="#7c3aed"
+        color="#8B6347"
         speed={1.8}
       />
       <FloatingOrb
         position={[1.5, 3, -5]}
         scale={0.4}
-        color="#a855f7"
+        color="#C49A6C"
         speed={2.2}
       />
       <FloatingOrb
         position={[-2, -2.5, -2]}
         scale={0.3}
-        color="#6d28d9"
+        color="#5C3D1E"
         speed={1.3}
       />
       <FloatingOrb
         position={[3, 2.5, -6]}
         scale={0.45}
-        color="#c084fc"
+        color="#D4A574"
         speed={1.6}
       />
 
-      <FloatingDiamond position={[-2.5, 3, -4]} color="#a855f7" />
-      <FloatingDiamond position={[3.5, -2, -3]} color="#8b5cf6" />
-      <FloatingDiamond position={[0, -3, -5]} color="#c084fc" />
+      <FloatingDiamond position={[-2.5, 3, -4]} color="#C49A6C" />
+      <FloatingDiamond position={[3.5, -2, -3]} color="#D4A574" />
+      <FloatingDiamond position={[0, -3, -5]} color="#E8D5B7" />
 
-      <FloatingRing position={[-3.5, -1, -3]} color="#7c3aed" />
-      <FloatingRing position={[2.5, 2, -4]} color="#a855f7" />
+      <FloatingRing position={[-3.5, -1, -3]} color="#8B6347" />
+      <FloatingRing position={[2.5, 2, -4]} color="#C49A6C" />
     </>
   );
 }
@@ -225,21 +225,21 @@ export default function Hero() {
       </div>
 
       {/* Gradient overlays */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/65 via-transparent to-black/92 pointer-events-none" />
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/85 via-black/30 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#3D2314]/55 via-transparent to-black/92 pointer-events-none" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#3D2314]/70 via-[#3D2314]/20 to-transparent pointer-events-none" />
 
       {/* Purple glow orbs */}
       <div
         className="absolute top-1/3 left-1/4 w-[550px] h-[550px] rounded-full blur-[140px] pointer-events-none z-10"
-        style={{ background: "rgba(139,92,246,0.08)" }}
+        style={{ background: "rgba(196,154,108,0.08)" }}
       />
       <div
         className="absolute bottom-1/3 right-1/4 w-[450px] h-[450px] rounded-full blur-[110px] pointer-events-none z-10"
-        style={{ background: "rgba(109,40,217,0.07)" }}
+        style={{ background: "rgba(140,96,71,0.07)" }}
       />
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full blur-[160px] pointer-events-none z-10"
-        style={{ background: "rgba(124,58,237,0.04)" }}
+        style={{ background: "rgba(196,154,108,0.04)" }}
       />
 
       {/* Content */}
@@ -253,7 +253,9 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <p className="section-eyebrow mb-4 animate-fade-in">
-                ✦ Lucknow's Premier Bridal Makeup Artist
+                <p className="section-eyebrow mb-4 animate-fade-in">
+                  ✦ Amravati's Premier Bridal Makeup Artist
+                </p>
               </p>
               <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-light leading-[0.95] tracking-tight">
                 <span className="gradient-gold-text">Art of</span>
@@ -270,7 +272,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              From intimate ceremonies to grand royal weddings — Nidhi Bhatia
+              From intimate ceremonies to grand royal weddings — Snehal Pawar
               crafts breathtaking bridal looks with precision, luxury, and an
               artist's eye for perfection. Trusted by celebrities across India.
             </motion.p>
@@ -346,13 +348,13 @@ export default function Hero() {
               {/* Purple glow */}
               <div
                 className="absolute inset-0 rounded-full blur-2xl"
-                style={{ background: "rgba(139,92,246,0.15)" }}
+                style={{ background: "rgba(196,154,108,0.15)" }}
               />
               {/* Portrait */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-gold/35 shadow-glow-gold">
                 <img
                   src="/assets/images/nidhi-portrait.png"
-                  alt="Nidhi Bhatia - Bridal Makeup Artist"
+                  alt="Snehal Pawar - Bridal Makeup Artist"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -378,7 +380,7 @@ export default function Hero() {
                 <motion.div
                   className="w-3 h-3 rounded-full shadow-glow-gold"
                   style={{
-                    background: "#a855f7",
+                    background: "#C49A6C",
                     transformOrigin: "160px 160px",
                   }}
                   animate={{ rotate: 360 }}

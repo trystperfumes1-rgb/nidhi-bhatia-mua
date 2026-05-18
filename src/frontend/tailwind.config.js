@@ -66,18 +66,18 @@ export default {
           border: "oklch(var(--sidebar-border))",
           ring: "oklch(var(--sidebar-ring))",
         },
-        // Purple replaces gold
+        // Refined brown & beige palette
         gold: {
-          DEFAULT: "#A855F7",
-          light: "#c084fc",
-          muted: "rgba(168,85,247,0.4)",
-          subtle: "rgba(139,92,246,0.12)",
+          DEFAULT: "#A67C5B",
+          light: "#E8D5B7",
+          muted: "rgba(166,124,91,0.35)",
+          subtle: "rgba(196,154,108,0.1)",
         },
         "rose-gold": {
-          DEFAULT: "#8B5CF6",
-          light: "#a78bfa",
-          muted: "rgba(139,92,246,0.4)",
-          subtle: "rgba(124,58,237,0.1)",
+          DEFAULT: "#8B5E3C",
+          light: "#C49A6C",
+          muted: "rgba(139,94,60,0.35)",
+          subtle: "rgba(139,94,60,0.08)",
         },
         luxury: {
           950: "oklch(var(--luxury-950) / <alpha-value>)",
@@ -88,8 +88,9 @@ export default {
         },
       },
       fontFamily: {
-        display: ["Playfair Display", "var(--font-display)", "Georgia", "serif"],
-        body: ["Raleway", "var(--font-body)", "system-ui", "sans-serif"],
+        display: ["Cormorant Garamond", "var(--font-display)", "Georgia", "serif"],
+        body: ["Jost", "var(--font-body)", "system-ui", "sans-serif"],
+        script: ["Great Vibes", "var(--font-script)", "cursive"],
         mono: ["var(--font-mono)", "monospace"],
       },
       borderRadius: {
@@ -98,15 +99,15 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        xs: "0 1px 2px 0 rgba(0,0,0,0.05)",
-        subtle: "0 2px 8px rgba(0,0,0,0.4)",
-        "glow-subtle": "0 0 18px rgba(139, 92, 246, 0.2)",
-        "glow-gold": "0 0 25px rgba(139, 92, 246, 0.45), 0 0 50px rgba(139, 92, 246, 0.2)",
-        "glow-rose": "0 0 25px rgba(109, 40, 217, 0.4), 0 0 60px rgba(109, 40, 217, 0.18)",
-        "glow-elevated": "0 0 35px rgba(124, 58, 237, 0.35), 0 0 80px rgba(139, 92, 246, 0.18)",
-        "glow-particle": "0 0 18px rgba(139, 92, 246, 0.35)",
-        "card-luxury": "0 4px 24px rgba(0,0,0,0.5), 0 0 20px rgba(139,92,246,0.08)",
-        "card-hover": "0 8px 40px rgba(0,0,0,0.6), 0 0 35px rgba(139,92,246,0.18)",
+        xs: "0 1px 2px 0 rgba(0,0,0,0.04)",
+        subtle: "0 2px 8px rgba(92,61,46,0.1)",
+        "glow-subtle": "0 0 18px rgba(196, 154, 108, 0.2)",
+        "glow-gold": "0 0 25px rgba(196, 154, 108, 0.3), 0 0 50px rgba(196, 154, 108, 0.12)",
+        "glow-rose": "0 0 25px rgba(92, 61, 46, 0.25), 0 0 60px rgba(92, 61, 46, 0.1)",
+        "glow-elevated": "0 0 35px rgba(196, 154, 108, 0.28), 0 0 80px rgba(92, 61, 46, 0.12)",
+        "glow-particle": "0 0 18px rgba(196, 154, 108, 0.28)",
+        "card-luxury": "0 4px 24px rgba(61,35,20,0.07), 0 0 20px rgba(196,154,108,0.05)",
+        "card-hover": "0 8px 40px rgba(61,35,20,0.12), 0 0 35px rgba(196,154,108,0.12)",
       },
       keyframes: {
         "accordion-down": {
@@ -127,12 +128,12 @@ export default {
           "50%": { transform: "translateY(-35px) scale(1.05)", opacity: "0.8" },
         },
         "glow-pulse": {
-          "0%, 100%": { boxShadow: "0 0 18px rgba(139, 92, 246, 0.25), 0 0 35px rgba(139,92,246,0.1)" },
-          "50%": { boxShadow: "0 0 40px rgba(139, 92, 246, 0.6), 0 0 80px rgba(139,92,246,0.28)" },
+          "0%, 100%": { boxShadow: "0 0 18px rgba(196, 154, 108, 0.2), 0 0 35px rgba(196,154,108,0.08)" },
+          "50%": { boxShadow: "0 0 40px rgba(196, 154, 108, 0.4), 0 0 80px rgba(196,154,108,0.18)" },
         },
         "glow-pulse-rose": {
-          "0%, 100%": { boxShadow: "0 0 18px rgba(109,40,217,0.25)" },
-          "50%": { boxShadow: "0 0 45px rgba(109,40,217,0.65), 0 0 80px rgba(109,40,217,0.28)" },
+          "0%, 100%": { boxShadow: "0 0 18px rgba(92,61,46,0.2)" },
+          "50%": { boxShadow: "0 0 45px rgba(92,61,46,0.4), 0 0 80px rgba(92,61,46,0.18)" },
         },
         "fade-in-up": {
           from: { opacity: "0", transform: "translateY(32px)" },
@@ -190,10 +191,10 @@ export default {
           "50%": { transform: "scale(1.04) perspective(400px) rotateY(8deg)" },
         },
         "glow-wave": {
-          "0%": { boxShadow: "0 0 10px rgba(139,92,246,0.2), 0 0 20px rgba(139,92,246,0.1)" },
-          "33%": { boxShadow: "0 0 25px rgba(124,58,237,0.5), 0 0 50px rgba(139,92,246,0.25), 0 0 80px rgba(109,40,217,0.1)" },
-          "66%": { boxShadow: "0 0 15px rgba(168,85,247,0.4), 0 0 40px rgba(139,92,246,0.2)" },
-          "100%": { boxShadow: "0 0 10px rgba(139,92,246,0.2), 0 0 20px rgba(139,92,246,0.1)" },
+          "0%": { boxShadow: "0 0 10px rgba(196,154,108,0.15), 0 0 20px rgba(196,154,108,0.08)" },
+          "33%": { boxShadow: "0 0 25px rgba(196,154,108,0.35), 0 0 50px rgba(139,94,60,0.18), 0 0 80px rgba(92,61,46,0.08)" },
+          "66%": { boxShadow: "0 0 15px rgba(196,154,108,0.28), 0 0 40px rgba(196,154,108,0.15)" },
+          "100%": { boxShadow: "0 0 10px rgba(196,154,108,0.15), 0 0 20px rgba(196,154,108,0.08)" },
         },
       },
       animation: {

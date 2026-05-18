@@ -71,23 +71,23 @@ function ServiceScene() {
   return (
     <>
       <ambientLight intensity={0.35} />
-      <pointLight position={[5, 5, 3]} color="#a855f7" intensity={2.5} />
-      <pointLight position={[-5, -3, 2]} color="#7c3aed" intensity={2} />
-      <pointLight position={[0, 3, 4]} color="#c084fc" intensity={1.2} />
+      <pointLight position={[5, 5, 3]} color="#C49A6C" intensity={2.5} />
+      <pointLight position={[-5, -3, 2]} color="#5C3D2E" intensity={2} />
+      <pointLight position={[0, 3, 4]} color="#E8D5B7" intensity={1.2} />
       <Sparkles
         count={30}
         size={1.5}
         scale={[12, 8, 6]}
         speed={0.4}
         opacity={0.5}
-        color="#a855f7"
+        color="#C49A6C"
       />
-      <ServiceOrb position={[-3, 2, -2]} color="#a855f7" />
-      <ServiceOrb position={[3, -1, -3]} color="#7c3aed" speed={1.5} />
-      <ServiceOrb position={[0, 3, -4]} color="#8b5cf6" speed={2.5} />
-      <ServiceOrb position={[-1, -2, -2]} color="#6d28d9" speed={1.8} />
-      <FloatingIcosahedron position={[2, 2.5, -3]} color="#c084fc" />
-      <FloatingIcosahedron position={[-2.5, -1.5, -3]} color="#8b5cf6" />
+      <ServiceOrb position={[-3, 2, -2]} color="#C49A6C" />
+      <ServiceOrb position={[3, -1, -3]} color="#5C3D2E" speed={1.5} />
+      <ServiceOrb position={[0, 3, -4]} color="#C49A6C" speed={2.5} />
+      <ServiceOrb position={[-1, -2, -2]} color="#5C3D2E" speed={1.8} />
+      <FloatingIcosahedron position={[2, 2.5, -3]} color="#E8D5B7" />
+      <FloatingIcosahedron position={[-2.5, -1.5, -3]} color="#C49A6C" />
     </>
   );
 }
@@ -211,7 +211,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
       )}
 
       <div
-        className={`p-7 h-full ${service.highlight ? "bg-gradient-to-br from-luxury-800 via-luxury-900 to-luxury-950" : "glass"}`}
+        className={`p-7 h-full ${service.highlight ? "bg-gradient-to-br from-[#EFE3D0] via-[#F5EDE0] to-[#FAF7F2]" : "glass"}`}
       >
         {service.highlight && (
           <span className="inline-block px-3 py-1 bg-gold/15 border border-gold/35 rounded-full text-gold text-[10px] tracking-widest uppercase font-body mb-4">
@@ -287,11 +287,11 @@ export default function Services() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/25 to-transparent" />
       <div
         className="absolute -top-40 right-0 w-[500px] h-[500px] rounded-full blur-[100px] pointer-events-none"
-        style={{ background: "rgba(124,58,237,0.06)" }}
+        style={{ background: "rgba(92,61,46,0.06)" }}
       />
       <div
         className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full blur-[120px] pointer-events-none"
-        style={{ background: "rgba(139,92,246,0.05)" }}
+        style={{ background: "rgba(196,154,108,0.05)" }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">

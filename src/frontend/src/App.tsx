@@ -11,6 +11,9 @@ const CelebrityWork = lazy(() => import("./pages/CelebrityWork"));
 const Testimonials = lazy(() => import("./pages/Testimonials"));
 const FAQSection = lazy(() => import("./pages/FAQSection"));
 const ContactMap = lazy(() => import("./pages/ContactMap"));
+const About = lazy(() => import("./pages/About"));
+const Academy = lazy(() => import("./pages/Academy"));
+const BookAppointment = lazy(() => import("./pages/BookAppointment"));
 
 function SectionLoader() {
   return (
@@ -22,7 +25,7 @@ function SectionLoader() {
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-deep-dark text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-[#FAF7F2] text-[#5C3D2E] overflow-x-hidden">
       <Navbar />
       <FloatingButtons />
 
@@ -48,6 +51,15 @@ export default function App() {
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <ContactMap />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <About />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <Academy />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <BookAppointment />
         </Suspense>
       </main>
 

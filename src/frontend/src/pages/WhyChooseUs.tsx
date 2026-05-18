@@ -73,40 +73,40 @@ function WhyScene() {
   return (
     <>
       <ambientLight intensity={0.3} />
-      <pointLight position={[4, 4, 4]} color="#a855f7" intensity={2.5} />
-      <pointLight position={[-4, -2, 3]} color="#7c3aed" intensity={2} />
-      <pointLight position={[0, -4, 2]} color="#c084fc" intensity={1.2} />
+      <pointLight position={[4, 4, 4]} color="#C49A6C" intensity={2.5} />
+      <pointLight position={[-4, -2, 3]} color="#5C3D2E" intensity={2} />
+      <pointLight position={[0, -4, 2]} color="#E8D5B7" intensity={1.2} />
       <Sparkles
         count={25}
         size={1.8}
         scale={[14, 10, 6]}
         speed={0.3}
         opacity={0.45}
-        color="#8b5cf6"
+        color="#C49A6C"
       />
-      <RotatingTorus position={[-4, 2, -3]} color="#a855f7" />
+      <RotatingTorus position={[-4, 2, -3]} color="#C49A6C" />
       <RotatingTorus
         position={[4, -2, -4]}
-        color="#8b5cf6"
+        color="#C49A6C"
         speed={1.3}
         tubeRadius={0.1}
       />
-      <RotatingTorus position={[1, 3, -5]} color="#7c3aed" speed={0.8} />
+      <RotatingTorus position={[1, 3, -5]} color="#5C3D2E" speed={0.8} />
       <RotatingTorus
         position={[-2, -3, -4]}
-        color="#c084fc"
+        color="#E8D5B7"
         speed={1.6}
         tubeRadius={0.08}
       />
       <RotatingTorus
         position={[3, 1, -3]}
-        color="#6d28d9"
+        color="#5C3D2E"
         speed={1.1}
         tubeRadius={0.18}
       />
-      <FloatingStar position={[-3, 0, -3]} color="#a855f7" />
-      <FloatingStar position={[2.5, -1, -2]} color="#c084fc" />
-      <FloatingStar position={[-1, 3.5, -4]} color="#8b5cf6" />
+      <FloatingStar position={[-3, 0, -3]} color="#C49A6C" />
+      <FloatingStar position={[2.5, -1, -2]} color="#E8D5B7" />
+      <FloatingStar position={[-1, 3.5, -4]} color="#C49A6C" />
     </>
   );
 }
@@ -161,7 +161,7 @@ const REASONS: WhyChooseItem[] = [
     id: "salon",
     title: "Premium Studio Setup",
     description:
-      "State-of-the-art studio in LDA Colony, Lucknow with professional lighting, a hygiene-first approach, and a serene bridal experience.",
+      "State-of-the-art studio in Sai Nagar, Amravati with professional lighting, a hygiene-first approach, and a serene bridal experience.",
     icon: "🏛️",
     stat: "5★",
     statLabel: "Studio",
@@ -182,7 +182,7 @@ function ReasonCard({ item, index }: { item: WhyChooseItem; index: number }) {
       <div className="flex items-start gap-5">
         <div
           className="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition-smooth animate-depth-pulse"
-          style={{ background: "rgba(139,92,246,0.12)" }}
+          style={{ background: "rgba(196,154,108,0.12)" }}
         >
           {item.icon}
         </div>
@@ -213,7 +213,7 @@ export default function WhyChooseUs() {
   return (
     <section
       id="why-choose-us"
-      className="relative py-28 bg-luxury-950 overflow-hidden"
+      className="relative py-28 bg-[#FAF7F2] overflow-hidden"
       data-ocid="why.section"
     >
       {/* 3D Background */}
@@ -225,11 +225,11 @@ export default function WhyChooseUs() {
 
       <div
         className="absolute -top-20 right-10 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none"
-        style={{ background: "rgba(139,92,246,0.06)" }}
+        style={{ background: "rgba(196,154,108,0.08)" }}
       />
       <div
         className="absolute bottom-10 left-0 w-[400px] h-[400px] rounded-full blur-[100px] pointer-events-none"
-        style={{ background: "rgba(109,40,217,0.05)" }}
+        style={{ background: "rgba(92,61,46,0.06)" }}
       />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/25 to-transparent" />
 
@@ -243,11 +243,11 @@ export default function WhyChooseUs() {
         >
           <p className="section-eyebrow mb-4">✦ Why Choose Us</p>
           <h2 className="font-display text-5xl md:text-6xl font-light text-foreground mb-5 tracking-wide">
-            The <span className="gradient-gold-text italic">Nidhi Bhatia</span>{" "}
+            The <span className="gradient-gold-text italic">Snehal Pawar</span>{" "}
             Difference
           </h2>
           <p className="text-foreground/50 font-body text-lg max-w-2xl mx-auto">
-            When you choose Nidhi Bhatia, you're not just booking a makeup
+            When you choose Snehal Pawar, you're not just booking a makeup
             artist — you're investing in a legacy of artistry, trust, and
             uncompromising excellence.
           </p>
@@ -270,7 +270,7 @@ export default function WhyChooseUs() {
           {[
             {
               src: "/assets/images/nidhi-doing-makeup.png",
-              alt: "Nidhi Bhatia at work",
+              alt: "Snehal Pawar at work",
             },
             {
               src: "/assets/images/salon-interior.png",
@@ -292,11 +292,11 @@ export default function WhyChooseUs() {
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-107"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-luxury-950/65 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#3D2314]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/25 rounded-xl transition-all duration-300" />
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ boxShadow: "inset 0 0 30px rgba(139,92,246,0.15)" }}
+                style={{ boxShadow: "inset 0 0 30px rgba(196,154,108,0.15)" }}
               />
             </div>
           ))}
